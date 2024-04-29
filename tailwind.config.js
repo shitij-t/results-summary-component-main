@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
@@ -10,6 +13,8 @@ module.exports = {
       hanken: ["HankenGrotesk"],
     },
     colors: {
+      purple: colors.purple,
+      indigo: colors.indigo,
       LightRed: "hsl(0, 100%, 67%)",
       LightRedfade: "hsl(0, 100%, 67%,0.1)",
       OrangeyYellow: "hsl(39, 100%, 56%)",
